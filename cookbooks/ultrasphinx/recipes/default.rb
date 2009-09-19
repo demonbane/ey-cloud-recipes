@@ -3,7 +3,6 @@ require 'pp'
 # Cookbook Name:: ultrasphinx
 # Recipe:: default
 #
-#if_app_needs_recipe("ultrasphinx") do |app,data,index|
 
 # Make sure that we only run this on an app instance and not on a database server.
 # The "node" information will be provided by the server, that's why you won't see
@@ -32,6 +31,7 @@ if ['solo', 'app', 'app_master'].include?(node[:instance_role])
       group "root"
       mode 0755
       source "sphinx.logrotate"
+      backup false
       action :create
     end
 

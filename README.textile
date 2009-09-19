@@ -20,10 +20,12 @@ referenced above, it *will not* be used during a deployment.
 
 
 h2. Included Cookbooks
+
 (This should be updated with brief documentation as each individual
 piece is added into the mix.)
 
 h3. UltraSphinx
+
 Note: _For the time being this is the fully-commented cookbook that we
 can use. We can use this as a template for the example once we start
 working on it._

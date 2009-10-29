@@ -8,8 +8,7 @@ Installation
 Follow these steps to use custom deployment recipes with your applications:
 
 * Download your ey-cloud.yml file from your EY Cloud [Extras][ey-extras] page and put it in your HOME directory ~/.ey-cloud.yml
-* Install the required gems:<br/>
-<code><pre>sudo gem install rest-client aws-s3
+* Install the required gems:<code><pre>sudo gem install rest-client aws-s3
 sudo gem install ey-flex --source http://gems.engineyard.com</pre></code>
 * Add any custom recipes or tweaks to the base recipes of your own and commit them to HEAD.
 * Upload them with: `ey-recipes --upload ENV` (where `ENV` is the name of your environment in EY Cloud. This may be different than your Rails environment name.)
